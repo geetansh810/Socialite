@@ -13,10 +13,10 @@ const post = require('./posts');
 const comment = require('./comments');
 const message = require('./messages');
 var uuid = require('uuid');
-// const flash = require('express-flash');
-// const { use } = require('passport');
-// const { token } = require('morgan');
-const {render } = require('../app');
+const flash = require('express-flash');
+const { use } = require('passport');
+const { token } = require('morgan');
+const { io, render } = require('../app');
 const e = require('express');
 const cloudinary = require('cloudinary');
 
